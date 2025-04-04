@@ -13,6 +13,7 @@
   border: none;
   list-style: none;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
   max-width: 1200px;
@@ -21,18 +22,76 @@
   padding: 0 1em;
 }
 /*Nav Styling Start*/
+header {
+  padding: 1em 0 0 0;
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+a:visited {
+  color: var(--main-text-color);
+}
+a:active {
+  color: var(--main-text-color);
+}
 .nav-pages {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2.5em;
+  font-size: 1rem;
+  font-weight: 550;
+  text-transform: capitalize;
+  color: var(--main-text-color);
 }
 .nav-logo {
+  font-family: "Bebas Neue", sans-serif;
   color: #080808;
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
   font-weight: 900;
+}
+.nav-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.nav-icons {
+  width: 23px;
+}
+/*Header styling end*/
+/*home page styling start*/
+.special-promotions-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.special-promotions-first-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.special-promotions-second-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.special-promotions-left-outside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-promotions-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+.special-promotions-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
