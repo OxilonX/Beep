@@ -1,0 +1,38 @@
+/*Variables*/
+:root {
+  --main-bg-color: #ffffff;
+  --sec-bg-color: ;
+  --main-text-color: #222222;
+  --sec-text-color: ;
+}
+/*General Styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+/*Nav Styling Start*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  color: #080808;
+  font-size: 2rem;
+  font-weight: 900;
+}
