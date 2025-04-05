@@ -4,7 +4,12 @@
   --sec-bg-color: ;
   --main-text-color: #222222;
   --sec-text-color: rgb(113, 113, 113);
+  --frame-1-bg: #d3dbe1;
+  --frame-2-bg: #f0f4f7;
+  --frame-3-bg: #fbfbfb;
+  --frame-4-bg: #dedddb;
 }
+
 /*General Styling*/
 * {
   margin: 0;
@@ -17,6 +22,9 @@
 }
 body {
   min-height: 200vh;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .container {
   max-width: 1200px;
@@ -93,7 +101,7 @@ a:active {
   gap: 1em;
   padding: 0 1em;
   height: 100%;
-  background-color: #d3dbe1;
+  background-color: var(--frame-1-bg);
 }
 .frame-1-infos-container {
   display: flex;
@@ -148,7 +156,7 @@ a:active {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #f0f4f7;
+  background-color: var(--frame-2-bg);
   gap: 5em;
   flex: 1;
   height: 100%;
@@ -197,7 +205,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #fbfbfb;
+  background-color: var(--frame-3-bg);
   gap: 4em;
   flex: 1;
   height: 100%;
@@ -247,7 +255,7 @@ a:active {
   display: flex;
   gap: 0em;
   height: 100%;
-  background-color: #dedddb;
+  background-color: var(--frame-4-bg);
   min-width: 45em;
   overflow: hidden;
 }
