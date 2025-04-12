@@ -3,202 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beep</title>
-    <!--Css link-->
-    <link rel="stylesheet" href="styles/style.css" />
-    <!--Font awsome-->
+    <title>Beep - Modern Clothing Store</title>
+    <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!--Material Design icons-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!--Bebas Neue gg fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <!--Montserrat gg fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <!-- <div class="top-bar">
-          <div class="language"></div>
-          <div class="currency"></div>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <h1>Beep</h1>
         </div>
-        <hr /> -->
-        <nav>
-          <div class="nav-logo">Beep</div>
-          <div class="nav-pages">
-            <a href="">home</a>
-            <a href="">shop</a>
-            <a href="">contacts</a>
-          </div>
-          <div class="nav-icons-container">
-            <img
-              class="nav-icons"
-              src="https://img.icons8.com/?size=100&id=uOoIUTYvxnso&format=png&color=000000"
-              alt=""
-            />
-            <img
-              class="nav-icons"
-              src="https://img.icons8.com/?size=100&id=14079&format=png&color=000000"
-              alt=""
-            />
-            <img
-              class="nav-icons"
-              src="https://img.icons8.com/?size=100&id=16076&format=png&color=000000"
-              alt=""
-            />
-            <img
-              class="nav-icons"
-              src="https://img.icons8.com/?size=100&id=22167&format=png&color=000000"
-              alt=""
-            />
-          </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
+        <div class="header-actions">
+          <div class="search-bar">
+            <input type="text" placeholder="Search products..." />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="cart">
+            <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
-      <section class="home-page">
-        <div class="container">
-          <div class="all-frames-container">
-            <div class="frames-container-1">
-              <div class="frame-1">
-                <div class="frame-1-infos">
-                  <div class="frame-1-infos-container">
-                    <h1>knit perfection</h1>
-                    <p>luxe layers for every season</p>
-                  </div>
 
-                  <button>shop now</button>
-                </div>
-                <div class="frame-1-image-container">
-                  <img
-                    src="assets/images/left-img-girl.png"
-                    alt=""
-                    class="frame-1-image"
-                  />
-                </div>
-              </div>
-              <div class="frame-2">
-                <img
-                  src="assets/images/nike-no-bg.png"
-                  alt=""
-                  class="frame-2-image"
-                />
-                <div class="frame-2-infos">
-                  <h1>up to 30% off</h1>
-                  <p>Lace-up leather sneakers</p>
-                </div>
-                <button>shop now</button>
-              </div>
-            </div>
-            <div class="frames-container-2">
-              <div class="frame-3">
-                <img
-                  src="assets/images/bag-nobg.png"
-                  alt=""
-                  class="frame-3-image"
-                />
-                <div class="frame-3-infos">
-                  <h1>Leather-effect toiletry bag</h1>
-                  <p>50%</p>
-                </div>
-                <button>shop now</button>
-              </div>
-              <div class="frame-4">
-                <div class="frame-4-infos">
-                  <div class="frame-4-infos-container">
-                    <h1>new arrival</h1>
-                    <p>Men's sweaters and cardigans</p>
-                  </div>
-                  <button>shop now</button>
-                </div>
-                <div class="frame-4-image-container">
-                  <img
-                    src="assets/images/a-guy-model-nobg.png"
-                    alt=""
-                    class="frame-4-image"
-                  />
-                </div>
-              </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-slider">
+        <div class="slide active">
+          <img src="assets/hero1.jpg" alt="Featured Collection" />
+          <div class="slide-content">
+            <h2>New Season Collection</h2>
+            <p>Discover the latest trends in fashion</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
           </div>
         </div>
-        <!--first offers-grid end-->
-        <!--Top Performers section-->
-        <div class="container">
-          <div class="top-performers-container">
-            <h1>top performers</h1>
-            <div class="top-performers-all-products-container">
-              <div class="top-performers-products-container">
-                <img
-                  src="assets/images/jacket-top-performers.jpg"
-                  alt=""
-                  class="top-performers-products-image"
-                />
-                <div class="top-performers-products-description">
-                  <h1>jacket</h1>
-                  <p>A stylish layer for warmth and protection</p>
-                  <span class="top-performers-price">$89.99</span>
-                </div>
-              </div>
-              <div class="top-performers-products-container">
-                <img
-                  src="assets/images/t-shirt-top-performers.jpg"
-                  alt=""
-                  class="top-performers-products-image"
-                />
-                <div class="top-performers-products-description">
-                  <h1>t-shirt</h1>
-                  <p>A comfortable basic for casual outings</p>
-                  <span class="top-performers-price">$24.99</span>
-                </div>
-              </div>
-              <div class="top-performers-products-container">
-                <img
-                  src="assets/images/jean-top-performers.jpg"
-                  alt=""
-                  class="top-performers-products-image"
-                />
-                <div class="top-performers-products-description">
-                  <h1>jean</h1>
-                  <p>A durable staple for everyday wear</p>
-                  <span class="top-performers-price">$59.99</span>
-                </div>
-              </div>
-              <div class="top-performers-products-container">
-                <img
-                  src="assets/images/dresse-top-performers.jpg"
-                  alt=""
-                  class="top-performers-products-image"
-                />
-                <div class="top-performers-products-description">
-                  <h1>dresse</h1>
-                  <p>A versatile piece for any occasion</p>
-                  <span class="top-performers-price">$69.99</span>
-                </div>
-              </div>
-            </div>
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="products" id="shop">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="men">Men</button>
+          <button class="filter-btn" data-category="women">Women</button>
+          <button class="filter-btn" data-category="accessories">
+            Accessories
+          </button>
+        </div>
+        <div class="product-grid">
+          <!-- Product cards will be added dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="collections">
+      <div class="container">
+        <h2>Featured Collections</h2>
+        <div class="collection-grid">
+          <div class="collection-card">
+            <img src="assets/collection1.jpg" alt="Summer Collection" />
+            <h3>Summer Collection</h3>
+            <a href="#summer" class="collection-link">Shop Now</a>
+          </div>
+          <div class="collection-card">
+            <img src="assets/collection2.jpg" alt="Winter Collection" />
+            <h3>Winter Collection</h3>
+            <a href="#winter" class="collection-link">Shop Now</a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Beep</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Beep is a modern clothing brand dedicated to bringing you the
+              latest fashion trends with a focus on quality and sustainability.
+              Our mission is to provide stylish, comfortable clothing that makes
+              you feel confident and empowered.
+            </p>
+            <a href="#about-more" class="cta-button">Learn More</a>
+          </div>
+          <div class="about-image">
+            <img src="assets/about.jpg" alt="About Beep" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-carousel">
+          <!-- Testimonials will be added dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Beep</h3>
+            <p>Your destination for modern fashion</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#shipping">Shipping</a></li>
+              <li><a href="#returns">Returns</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Beep. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
